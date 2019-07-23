@@ -19,28 +19,25 @@ def using_shift (array)
   array.shift
 end
 
-### `shift_with_args`
+def shift_with_args (array)
+  array.shift(2)
+end 
 
-This method takes in an argument of an `Array` and uses the `.shift` method with
-an argument of 2 to remove and return the first 2 items from the array.
+def using_concat (array1, array2)
+  array1.concat(array2)
 
-### `using_concat`
 
-This method takes in two arguments of two different arrays and uses the
-`.concat` method to add the contents of the second array to the first.
+def using_insert (array, element)
+  array.insert(4) = element
+end
 
-### `using_insert`
 
-This method takes in two arguments, an `Array` and a new element to be added to
-the array. it uses the `.insert` method to add the new element to the 4th index
-of the array.
+def using_uniq (array)
+  array.uniq
+end
 
-### `using_uniq`
 
-This method takes in an argument of an `Array` and uses the `.uniq` method to
-remove any duplicate items.
-
-### `using_flatten`
+### `using_flatten
 
 This method takes in an argument of an `Array` that contains other arrays and
 uses the `.flatten` method to return an array of strings.
