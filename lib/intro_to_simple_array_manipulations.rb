@@ -1,27 +1,23 @@
 def using_push (array, string)
+  array.push(string)
+end
 
-This method takes in two arguments, an `Array` and a `String`. It adds that
-string to the end of the array using the `.push` method.
 
-### `using_unshift`
+def using_unshift (array, string)
+  array.unshift(string)
+end
 
-This method takes in two arguments, an `Array` and a `String` and adds that
-string to the front of the array using the `.unshift` method.
+def using_pop (array)
+  array.pop
+end
 
-### `using_pop`
+def pop_with_args (array)
+  array.pop(2)
+end 
 
-This method takes in argument of an `Array` and uses the `.pop` method to remove
-the last element from the array and return that element.
-
-### `pop_with_args`
-
-This method takes in an argument of an `Array` and uses the `.pop` method with an
-argument of 2 to remove the last two array items and return them.
-
-### `using_shift`
-
-This method takes in an argument of an `Array` and uses the `.shift` method to
-remove the first item and return it.
+def using_shift (array)
+  array.shift
+end
 
 ### `shift_with_args`
 
